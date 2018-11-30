@@ -1,0 +1,186 @@
+  MATLAB COMMAND LINE CODE JUST COPY AND PASTE OVER HERE::
+
+>> i=imread('C:\Users\Asus\Desktop\AIUB_Campus_Inner view.jpg');
+>> imshow(i)
+Warning: Image is too big to fit on screen; displaying at 13% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> impixelinfo
+>> size(i)
+
+ans =
+
+        5376        3744           3
+
+>> impixel(i,20,40)
+
+ans =
+
+   190   199   214
+
+>> colormap(jet)
+>> a= imread('C:\Users\Asus\Desktop\IMG_4779.jpg');
+>> imshow(a)
+Warning: Image is too big to fit on screen; displaying at 17% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> reshape(a,20,20)
+Error using reshape
+To RESHAPE the number of elements must not change.
+ 
+>> size(a)
+
+ans =
+
+        3456        5184           3
+
+>> [b,bmap]=imread('C:\Users\Asus\Desktop\2html.png');
+>> imshow (b,bmap)
+>> j=imd2gray(a,cmap)
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> j=ind2gray(a,cma)
+Error using cma (line 27)
+Not enough input arguments.
+ 
+>> j= ind2gray(a,cmap)
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> j= ind2gray(a,cmap);
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> j= ind2gray(a,cmap);
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> j= ind2gray(c,cma);
+Undefined function or variable 'c'.
+ 
+>> imshow(a)
+Warning: Image is too big to fit on screen; displaying at 17% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> imshow(b)
+>> imshow(i)
+Warning: Image is too big to fit on screen; displaying at 13% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> figure, imshow(b)
+>> figure,imshow(c,cmap)
+Undefined function or variable 'c'.
+ 
+>> figure,imshow(i,cmap)
+Undefined function or variable 'cmap'.
+ 
+>> m = ind2gray (b, bmap);
+Error using coder.internal.errorIf (line 8)
+Function IND2GRAY expected input number 2, MAP, to be a valid
+colormap. Valid colormaps must be nonempty, double, 2-D matrices with
+3 columns.
+
+Error in iptcheckmap (line 42)
+    coder.internal.errorIf(true,'images:validate:badMapMatrix', ...
+
+Error in ind2gray>parse_inputs (line 76)
+iptcheckmap(varargin{2}, mfilename, 'MAP', 2);
+
+Error in ind2gray (line 23)
+[a,cm] = parse_inputs(varargin{:});
+ 
+>> m = ind2gray (c,cmap);
+Undefined function or variable 'c'.
+ 
+>> c= imread('C:\Users\Asus\Desktop\1html.png');
+>> figure, imshow(c,cmap)
+Undefined function or variable 'cmap'.
+ 
+>> y = ind2gray (c,cma);
+Error using cma (line 27)
+Not enough input arguments.
+ 
+>> y =ind2ray (c,cmap);
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> y =ind2gray (c,cma);
+Error using cma (line 27)
+Not enough input arguments.
+ 
+>> x= rgb2gray(a);
+>> imshow(x)
+Warning: Image is too big to fit on screen; displaying at 17% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> y =ind2gray (c,map);
+Undefined function or variable 'map'.
+ 
+>> y =ind2gray (c,cmap);
+Undefined function or variable 'cmap'.
+ 
+Did you mean:
+>> y =ind2gray (c,cma);
+Error using cma (line 27)
+Not enough input arguments.
+ 
+>> imshow(a)
+Warning: Image is too big to fit on screen; displaying at 17% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> cd =double(c);
+>> imshow(cd)
+Warning: Image is too big to fit on screen; displaying at 67% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> imshow(cd)
+Warning: Image is too big to fit on screen; displaying at 67% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> imshow(cd/255);
+Warning: Image is too big to fit on screen; displaying at 67% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> imshow(cd)
+Warning: Image is too big to fit on screen; displaying at 67% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> cd1=imdouble(c);
+Undefined function or variable 'imdouble'.
+ 
+Did you mean:
+>> cd1=im2double(c);
+>> figure,imshow(cd1)
+Warning: Image is too big to fit on screen; displaying at 67% 
+> In images.internal.initSize (line 71)
+  In imshow (line 309) 
+>> r = c>120;
+>> imshow(r)
+Error using images.internal.imageDisplayValidateParams>validateCData
+(line 119)
+If input is logical (binary), it must be two-dimensional.
+
+Error in images.internal.imageDisplayValidateParams (line 27)
+common_args.CData = validateCData(common_args.CData,image_type);
+
+Error in images.internal.imageDisplayParseInputs (line 78)
+common_args = images.internal.imageDisplayValidateParams(common_args);
+
+Error in imshow (line 222)
+      images.internal.imageDisplayParseInputs({'Parent','Border','Reduce'},preparsed_varargin{:}); 
+>> r = c>50;
+>> imshow(r)
+Error using images.internal.imageDisplayValidateParams>validateCData
+(line 119)
+If input is logical (binary), it must be two-dimensional.
+
+Error in images.internal.imageDisplayValidateParams (line 27)
+common_args.CData = validateCData(common_args.CData,image_type);
+
+Error in images.internal.imageDisplayParseInputs (line 78)
+common_args = images.internal.imageDisplayValidateParams(common_args);
+
+Error in imshow (line 222)
+      images.internal.imageDisplayParseInputs({'Parent','Border','Reduce'},preparsed_varargin{:}); 
+>> 
